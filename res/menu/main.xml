@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   
+    <item
+        android:id="@+id/action_titelSort"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Sortera efter titel"/>
+    <item
+        android:id="@+id/action_melodySort"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Sortera efter melodi"/>
+    <item
+        android:id="@+id/action_dateSort"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Sortera efter senast inlagda"/>
+     <item
+        android:id="@+id/action_showCategories"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Visa kategorier"/>
+     <item
+        android:id="@+id/action_downlodSongs"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Hämta nya låtar"/>
+    <item
+        android:id="@+id/action_logIn"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Logga in"/>
+
+</menu>

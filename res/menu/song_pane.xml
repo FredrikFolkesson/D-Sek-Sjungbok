@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_addToFavorites"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Lägg till i favoriter"/>
+    <item android:id="@+id/musik"
+          android:icon="@drawable/greynot"
+          android:title=""
+          android:showAsAction="ifRoom"/>
+
+</menu>

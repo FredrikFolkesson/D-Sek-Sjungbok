@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Pink"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+  
+	
+
+
+    
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <ListView
+            android:id="@+id/SongView"
+            android:layout_width="wrap_content"
+            android:layout_height="382dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:divider="@color/Pink" >
+        
+    	</ListView>
+    	 <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sortButton"
+        android:orientation="horizontal" >
+        
+    	     
+    	<Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="searchSongs"
+        android:text="search" />
+
+    <Button
+        android:id="@+id/sortTitleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sortTitle"
+        android:text="sortTitle" />
+    
+    <Button
+        android:id="@+id/sortMelodyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sortMelody"
+        android:text="sortMelody" />
+    
+     <Button
+        android:id="@+id/showFavoritesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showFavorites"
+        android:text="showFavorites" />
+    	
+    	</LinearLayout>
+    
+    </LinearLayout>
+
+</RelativeLayout>

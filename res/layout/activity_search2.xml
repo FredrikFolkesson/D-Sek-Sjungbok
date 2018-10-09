@@ -1,0 +1,92 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+       <RelativeLayout 
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Pink"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/melodi"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Text"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/melodi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text"
+        android:layout_alignRight="@+id/text"
+        android:layout_below="@+id/titel"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Melodi"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/titel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/melodi"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Titel"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textColorHint="#000000" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_below="@+id/text"
+        
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="searchForSongs"
+        android:text="Sök" />
+
+</RelativeLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/Pink"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+</android.support.v4.widget.DrawerLayout>

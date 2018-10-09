@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sjungbok</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_song_pane">SongPane</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+
+    <string-array name="menus">
+        <item>Sånger</item>
+        <item>Sök</item>
+        <item>Favoriter</item>
+        <item>Historik</item>
+    </string-array>
+
+    <string name="title_activity_category">CategoryActivity</string>
+
+</resources>

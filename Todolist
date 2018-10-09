@@ -1,0 +1,130 @@
+möjlighet att hämta sånger igen (med eller utan sitt dsek login (även möjlighet att spara sitt dsek login) (behöver krypteras på fil)
+
+Automatiskt nedladdning av nya sånger. (en gång i veckan?) (gör bara automatisk nedladdning om du har wifi, för då har du antagligen nice speed)
+Fixa nerladdning av ändrade sånger
+(hur löser man att ta bort gamla?)
+senast uppdaterad attribut i sången? (när man laddar ner uppdaterade låtar ersätt dem som objekt och skriv sen alla låtarna till fil)
+
+
+Ska man notifiera användaren att en automatisk uppdatering av sångerna har skett? (toast med application basecontext)? eller som uppdateringen i "drawern"? (den man drar ner från toppen av skärmen) (tycker bättre om toast)
+
+
+
+Kolla att man har internet när man har wifi
+Hur ofta vill vi göra en automatisk uppdatering? Varje vecka? Dag?
+
+
+
+
+
+Korta ner sånglist filen? (genom att t.ex bara skriva när vi avslutar en sång och ha med <favorite> om det är en favorit? (kanske först kolla vilken tid det tar?)
+
+Döda sånger när vi backar/öppnar en ny aktivitet
+
+
+
+musikikonen borde se likadant ut överallt
+
+
+SQL databas
+
+
+Metod för att uppdatera historiken vid nya låtar (indexen stämmer inte längre då)
+
+Skriv om med vettig design (fragments och gör inte så mycket i mainactivity)
+
+
+Lägga till sånger på dseks hemsida manuellt? så alla sånger finns?
+Skriv om beskrivningen av appen
+
+Har dseks hemsida ett api?
+
+Settings i vänster drawern: (saker jag tänker ska finnas där)
+
+Ta bort alla favoriter
+Ta bort all historik
+Ta bort alla loka sångfiler
+Ändra ditt sparade DSEK konto
+
+Hämta nya låtar (eller vill vi ha det direkt i vänster drawern?)
+Ändra hur ofta man vill hämta nya låtar
+
+
+
+
+
+i settings kunna välja att ladda ner .mp3/waw
+
+visa att vi laddar appen i början?
+
+
+
+transformera mp3/waw till .mid
+
+
+
+kolla hur lång tid det tar att läsa och skriva till fil (optimera) (JOHAN FIXAR)
+
+
+
+Ladda ner all musik och ha så den är uppspelbar i appen
+kolla att du faktiskt fått ner hela midfiler och inte korrupt skit
+fråga om de vill ha .mp3 filer?
+
+
+
+ta bort kommatecken, andra specialtecken innan vi söker? se:
+http://www.dsek.se/arkiv/sanger/index.php?song=192
+
+
+appen gör om en sökning ifall man "går tillbaka" till aktiviteten genom att klicka på den fysiska mitten knappen och sen gå tillbaka till appen
+se bokstav när man scrollar snabbt
+
+
+
+
+
+Klass som läser från fil för att skapa sånglistor
+
+
+
+
+bygga med fragments? (bygga först med Activity sen fragment?)
+
+Tänker 5 "sidor" som man byter med en sån sidmeny som i nolleappen1) sök
+2) lista 
+4) favoriter
+5) hämta nya sånger
+6) lägg in en ny låt
+7) historik
+
+
+
+// finns ingen kategori när man hämtar med json
+
+
+
+
+Bara göra automatisk nedladdning av nya sånger om man har wifi (kan man kolla om man har wifi?)
+
+
+
+
+VIKTIG BUGG: man kan inte om man låtit en "låt" spela färdigt starta den igen, noten förblir rosa
+
+
+
+CLEANUP:
+
+flytta all? så mycket det går? av skrivande till fil till en klass? nu har vi några duplicerade metoder (en async task?)
+Vill vi flytta allt skrivande och läsande till async task?
+
+
+FRÅGOR:
+
+
+
+
+
+
+
